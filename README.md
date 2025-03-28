@@ -100,8 +100,6 @@ Design IMDB Database
 
 Design the cloud architecture for Instagram
 
-Create a metrics aggregation platform Hiring Manager round
-
 
 ## General Questions
 Situation when you failed on a project:
