@@ -21,7 +21,7 @@ refer to "react-typescript-notes"
 
 ## SQL basics refresher
 
-Remember to mention I use ORMs a lot, and I use some AI tools to help craft raw SQL queries when i have to, but we don't normally write RAW SQL since we use entity framwork core and I also like using SQLalchemy. 
+Remember to mention I use ORMs a lot, and I use some AI tools to help craft raw SQL queries when i have to, but we don't normally write RAW SQL since we use entity framwork core and I also like using SQLalchemy. However, I am pretty comfortable with PostgreSQL/AWS RDS and MongoDB/DynamoDB and recently used CockroachDB which is a cloud based Postgres database. 
 
 ```sql
 SELECT
