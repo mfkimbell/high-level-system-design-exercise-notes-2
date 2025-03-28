@@ -65,11 +65,8 @@ Design a system with cache
 
 ## Rate Limiter
 
-2. Problem 2: REST API Rate Limiter
-
-Question: Design a function to simulate a rate limiter that restricts incoming API requests to a defined threshold per user.
-Approach: I explained the use of data structures like hash maps to track user requests and algorithms such as sliding windows or leaky buckets to handle the logic efficiently.
-
+see
+https://github.com/mfkimbell/twilio-message-system-notes/blob/main/README.md
 
 ## Leetcode
 
