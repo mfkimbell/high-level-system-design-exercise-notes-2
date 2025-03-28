@@ -23,6 +23,8 @@ refer to "react-typescript-notes"
 
 Remember to mention I use ORMs a lot, and I use some AI tools to help craft raw SQL queries when i have to, but we don't normally write RAW SQL since we use entity framwork core and I also like using SQLalchemy. However, I am pretty comfortable with PostgreSQL/AWS RDS and MongoDB/DynamoDB and recently used CockroachDB which is a cloud based Postgres database. 
 
+ORDER BY orders things by a specific column
+
 ```sql
 SELECT
     customer_id,
@@ -38,6 +40,15 @@ ORDER BY
 LIMIT 10;
 ```
 
+Inner join
+
+<img width="464" alt="Screenshot 2025-03-28 at 11 15 52 AM" src="https://github.com/user-attachments/assets/521e3219-0b3d-4bcd-87de-bd113590d310" />
+
+We can use `GROUP BY` to perform our operations uniquely based on a column such as a player ID
+
+<img width="365" alt="Screenshot 2025-03-28 at 11 17 53 AM" src="https://github.com/user-attachments/assets/261af93c-dc35-41ad-b750-ef3e10ec1a56" />
+
+<img width="226" alt="Screenshot 2025-03-28 at 11 18 52 AM" src="https://github.com/user-attachments/assets/71fccdeb-8ee7-4a86-b212-b4a038b49fd0" />
 
 ## SMS example
 
