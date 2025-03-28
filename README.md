@@ -52,6 +52,7 @@ We can use `GROUP BY` to perform our operations uniquely based on a column such 
 
 ## SMS example
 
+#### How do you prepare for system failure?
 Design a notification system based on some criteria
 
 In this interview on a Hackerrank link that provides a white a board, you have to draw how you would design an application that uploads file media and allows to search the files. You have to start from selecting the front end, back end, database, and other required components, and it will be asked to provide more details on specific parts of the diagram. 
@@ -61,6 +62,14 @@ Design a system that sends/receives messages
 ## LRU Cache example
 How would you design a LRU cache? 
 Design a system with cache
+
+## Rate Limiter
+
+2. Problem 2: REST API Rate Limiter
+
+Question: Design a function to simulate a rate limiter that restricts incoming API requests to a defined threshold per user.
+Approach: I explained the use of data structures like hash maps to track user requests and algorithms such as sliding windows or leaky buckets to handle the logic efficiently.
+
 
 ## Leetcode
 
@@ -86,12 +95,6 @@ Given two arrays of strings, one containing the prefixes (area code) and one wit
 
 (implement queue using stack)
 
-## Low Level Design
-
-2. Problem 2: REST API Rate Limiter
-
-Question: Design a function to simulate a rate limiter that restricts incoming API requests to a defined threshold per user.
-Approach: I explained the use of data structures like hash maps to track user requests and algorithms such as sliding windows or leaky buckets to handle the logic efficiently.
 
 
 ## System Design
@@ -100,13 +103,15 @@ Design IMDB Database
 
 Design the cloud architecture for Instagram
 
- Create a metrics aggregation platform Hiring Manager round
+Create a metrics aggregation platform Hiring Manager round
 
 
-## General Question
-Situation when you failed on a project
+## General Questions
+Situation when you failed on a project:
 
-## How do you prepare for system failure?
+I introduced an issue in prod by introducing a new WAF that the security team had me add. I tested it thoroughly, but didn't consider that we also needed to test with clients outside of the Regions internal whitelisted IPs. Just shows you need to dedicate proper time to testing and run it by other people before something goes to production. 
+
+
 
 
 ## OK TIME TO ACTUALLY DO SOME HANDS ON WITH TWILIO API 
