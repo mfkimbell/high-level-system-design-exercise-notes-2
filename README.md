@@ -11,10 +11,13 @@
 GET, POST, DELETE, PUT(creates resource if it doesn't exist)/PATCH(doesn't create if it doesn't exist)
 
 ## Monolithic vs Decoupled architechture
+
 Monolithic = keeps things simple and designed for the specific task
+
 Decoupled = scalable, modular, better for system reuse, more fault tolerant
 
-#### React refer to "react-typescript-notes"
+## Javascript review
+refer to "react-typescript-notes"
 
 ## SQL basics refresher
 
@@ -94,4 +97,6 @@ Situation when you failed on a project
 
 ## How do you prepare for system failure?
 
+
+## OK TIME TO ACTUALLY DO SOME HANDS ON WITH TWILIO API 
 
