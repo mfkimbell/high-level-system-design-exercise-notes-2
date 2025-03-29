@@ -2,7 +2,9 @@
 
 ## What is Twilio?
 - A cloud communications platform that offers services in the form of APIs that developers can use to integrate voice, messaging, and video communication capabilities into web and mobile applications.
+- Twilio helps businesses communicate with their customers
 - Twilio focusses more on SMS and voice than email
+
 
 ## What is an API?
 - an api is a system of rules that allows different software services to interact
