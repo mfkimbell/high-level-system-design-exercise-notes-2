@@ -65,6 +65,91 @@ Design a system that sends/receives messages
 How would you design a LRU cache? 
 Design a system with cache
 
+Four Kinds of Cache:
+* browser cache
+* CDN cache
+* **Server cache** (redis, memcached)
+* Database cache
+
+### Cache Invalidation
+
+We use **TTL** or Time to Live to tell the system when to remove that cache entry from redis.
+
+### Cache Strategies
+
+#### Write-Through / Write-Behind:
+
+Write-through: Data is written to the cache and the underlying data store at the same time. Simplifies consistency but can add latency to writes.
+
+Write-behind (or “write-back”): Updates are written to the cache first and then asynchronously to the underlying store. Improves write performance but increases risk of data loss or lag if the cache fails before flush.
+
+#### Lazy Loading
+
+ The application checks the cache first, if there’s a miss, the app fetches from the database and populates the cache. Common approach to reduce overhead when data isn’t always requested.
+
+ ### LRU and LFU
+
+ LRU = Least Recently Used
+ LFU = Least Frequently Used (really really popular old youtube videos would never get removed)
+
+ ### Refresh Ahead
+
+The cache preemptively refreshes items that are about to expire. This can reduce latency spikes if your system has predictable access patterns.
+
+## Designing the LRU redis cache for database SQL resource calls
+
+1. make a redis table, set LRU as strategy
+
+You set LRU or LFU in Redis’s configuration, either in the `redis.conf` file or dynamically at runtime with `CONFIG SET`
+
+ Redis doesn’t actually store an explicit “LRU” column in a user-readable table, but under the hood it maintains **metadata** (like last-access timestamps or usage counters) to handle eviction.
+
+| Key                                  | Value (serialized)                | TTL (sec) | **LRU / Usage Info** (conceptual)          |
+|--------------------------------------|-----------------------------------|-----------|--------------------------------------------|
+| `db_query:md5("SELECT ...")`        | JSON blob of the query result     | 3600      | Last accessed: 2025-03-30 10:52:36         |
+| `db_query:md5("SELECT ... 2")`      | JSON blob of another query result | 3600      | Last accessed: 2025-03-30 10:59:02         |
+
+
+- **Key**: The hashed SQL query (e.g., `db_query:a197022c8ea3032d0797...`).  
+- **Value**: The serialized query result (often JSON, MsgPack, etc.).  
+- **TTL**: How long Redis will keep the key before it expires automatically (e.g., 3600 seconds).  
+- **LRU / Usage Info**: A conceptual column showing the key’s last access time (or usage counter). Redis uses this info *behind the scenes* to decide which key to evict first once memory constraints are reached.
+
+
+2. make our backend route attempt to use the cache first
+
+hashes query -> attempts redis data grab -> if hit, update -> if miss, queries real database -> updates hash
+
+```python
+def get_data(query: str, redis_client) -> Any:
+    """
+    Attempts to get data from Redis first. On a miss, queries the DB,
+    stores the result in Redis, and returns it.
+    """
+    import hashlib
+    
+    # 1) Hash the query to build a unique key
+    query_hash = hashlib.md5(query.encode('utf-8')).hexdigest()
+    redis_key = f"db_query:{query_hash}"
+
+    # 2) Check Redis
+    cached_data = redis_client.get(redis_key)
+    if cached_data is not None:
+        # Cache HIT
+        return deserialize(cached_data)
+
+    # 3) Cache MISS => fetch from DB
+    db_result = get_data_from_db(query)
+    if db_result is not None:
+        # 4) Serialize and store in Redis with a TTL (e.g., 3600 seconds)
+        redis_client.setex(redis_key, 3600, serialize(db_result))
+
+    # 5) Return the fresh data
+    return db_result
+```
+
+
+
 ## Rate Limiter
 
 see
