@@ -196,5 +196,4 @@ I introduced an issue in prod by introducing a new WAF that the security team ha
 
 
 
-## OK TIME TO ACTUALLY DO SOME HANDS ON WITH TWILIO API 
 
