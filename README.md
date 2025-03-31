@@ -9,6 +9,31 @@
 
 https://github.com/mfkimbell/react-typescript-notes
 
+## Conflict Interview Story
+
+#### SITUATION AND TASK
+
+I have a consulting group with my friends Jayden and Michael, they're developers at Motion and Apple.
+
+We had a client ask us to build an embeddable iframe that helps marketing people learn to use ai to help apply business decomposition documents
+
+They said it would take around 4 hours and they would pay $600. I guessed it would take 3 times longer, which was fine, and I had the other two developers from my consulting gorup come help.
+
+Now we were making good progress, but jayden wanted to do a full CICD pipeline. By the time me and micheal had finished the project (around 6-8 hours in) jayden was still working on his CICD pipeline. He knew it was going to take longer and he wanted to ask for more money.
+
+#### ACTION
+
+I wanted to maintain professionalism and a good reputation with the client and NOT ask for more money, but i also felt for jayden and didn't want him to feel like we were taking advantage of him. My solution was to our relationship with the client, so i talked to our other developer micheal and asked if he would be ok splitting the payout by hours worked. He agreed, and the problem was solved.
+
+#### RESULT AND WHAT I LEARNED
+
+I took a pay cut, but the client ended up being very happy with the work, and said he would recommend us and reach out in the future.
+
+
+we need a full cicd template for fast projects, which was have since made for AWS and Google Cloud.
+we needed way better requirement documents, and I needed to work closer with the client to make that happen
+Its always better to prioritize relationships with people over money, and I realized it's important to consider how timelines and budgets can affect projects and strain relationships, because money is very important to both clients and engineers. We had to navigate product quality versus funding and time. My team overperformed because we didn't want to produce low quality products, even for a demo.
+
 ## What is an API?
 - an api is a system of rules that allows different software services to interact
 
