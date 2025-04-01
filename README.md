@@ -30,9 +30,10 @@ I wanted to maintain professionalism and a good reputation with the client and N
 I took a pay cut, but the client ended up being very happy with the work, and said he would recommend us and reach out in the future.
 
 
-we need a full cicd template for fast projects, which was have since made for AWS and Google Cloud.
-we needed way better requirement documents, and I needed to work closer with the client to make that happen
-Its always better to prioritize relationships with people over money, and I realized it's important to consider how timelines and budgets can affect projects and strain relationships, because money is very important to both clients and engineers. We had to navigate product quality versus funding and time. My team overperformed because we didn't want to produce low quality products, even for a demo.
+1. we need a full cicd template for fast projects, which was have since made for AWS and Google Cloud.
+2. we needed way better requirement documents, and I needed to work closer with the client to make that happen
+3. Its always better to prioritize relationships with people over money
+4. I realized it's important to consider how timelines and budgets can affect projects and strain relationships, because money is very important to both clients and engineers. We had to navigate product quality versus funding and time. My team overperformed because we didn't want to produce low quality products, even for a demo.
 
 ## What is an API?
 - an api is a system of rules that allows different software services to interact
