@@ -31,9 +31,7 @@ I took a pay cut, but the client ended up being very happy with the work, and sa
 
 
 1. we need a full cicd template for fast projects, which was have since made for AWS and Google Cloud.
-2. we needed way better requirement documents, and I needed to work closer with the client to make that happen
-3. Its always better to prioritize relationships with people over money
-4. I realized it's important to consider how timelines and budgets can affect projects and strain relationships, because money is very important to both clients and engineers. We had to navigate product quality versus funding and time. My team overperformed because we didn't want to produce low quality products, even for a demo.
+2. When discussing requirements for a project, It's not good enough to know what the funcionality is, it's important to consider **non-functional requirements**. Because these non-functional requirements can affect cost. Do they want this deployed as microservices in the cloud, or do they want a quick local demo? Does it need to be extremely fast with batch processing and workers taking from an SQS queue, or can it be processed on one local cpu? Money is a sensitive subject anc can strain relationships with both clients and employees. My team overperformed on our dime because we didn't want to produce low quality products, even for a demo, but in the future, it's going to become a more serious part of project discussions. 
 
 ## What is an API?
 - an api is a system of rules that allows different software services to interact
