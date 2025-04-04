@@ -36,6 +36,7 @@ I took a pay cut, but the client ended up being very happy with the work the dem
 
 ## What is an API?
 - an api is a system of rules that allows different software services to interact
+- Guidelines/rules on how to communicate
 
 ## HTTP Methods: 
 GET, POST, DELETE, PUT(creates resource if it doesn't exist)/PATCH(doesn't create if it doesn't exist)
