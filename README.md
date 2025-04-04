@@ -23,7 +23,7 @@ Now we were making good progress, but jayden wanted to do a full CICD pipeline. 
 
 #### ACTION
 
-I wanted to maintain professionalism and a good reputation with the client and NOT ask for more money, but i also felt for jayden and didn't want him to feel like we were taking advantage of him. My solution was to our relationship with the client, so i talked to our other developer micheal and asked if he would be ok splitting the payout by hours worked. He agreed, and the problem was solved.
+I wanted to maintain professionalism and a good reputation with the client and NOT ask for more money, but i also felt for jayden and didn't want him to feel like we were taking advantage of him, since he's a good engineer and we had just started this group. My solution was to our relationship with the client, so i talked to our other developer micheal and asked if he would be ok retroactively splitting the payout by hours worked. He agreed, and the problem was solved.
 
 #### RESULT AND WHAT I LEARNED
 
