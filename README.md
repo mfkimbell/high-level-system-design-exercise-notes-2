@@ -27,7 +27,7 @@ I wanted to maintain professionalism and a good reputation with the client and N
 
 #### RESULT AND WHAT I LEARNED
 
-I took a pay cut, but the client ended up being very happy with the work, and said he would recommend us and reach out in the future.
+I took a pay cut, but the client ended up being very happy with the work the demo went well, and said he would recommend us and reach out in the future.
 
 
 1. we need a full cicd template for fast projects, which was have since made for AWS and Google Cloud.
