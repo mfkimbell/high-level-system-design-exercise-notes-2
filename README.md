@@ -77,6 +77,8 @@ Inner join
 
 We can use `GROUP BY` to perform our operations uniquely based on a column such as a player ID
 
+ It's most commonly used with aggregate functions like `COUNT()`, `SUM()`, `AVG()`, `MAX()`, and `MIN()` to perform calculations on each group of rows.
+
 <img width="365" alt="Screenshot 2025-03-28 at 11 17 53 AM" src="https://github.com/user-attachments/assets/261af93c-dc35-41ad-b750-ef3e10ec1a56" />
 
 <img width="226" alt="Screenshot 2025-03-28 at 11 18 52 AM" src="https://github.com/user-attachments/assets/71fccdeb-8ee7-4a86-b212-b4a038b49fd0" />
