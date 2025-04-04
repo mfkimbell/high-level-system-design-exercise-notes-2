@@ -17,7 +17,7 @@ I have a consulting group with my friends Jayden and Michael, they're developers
 
 We had a client ask us to build an embeddable iframe that helps marketing people learn to use ai to help apply business decomposition documents
 
-They said it would take around 4 hours and they would pay $600. I guessed it would take 3 times longer, which was fine, and I had the other two developers from my consulting gorup come help.
+They said it would take around 4 hours and they would pay $600. I guessed it would take 3 times longer, which was fine, and I had the other two developers from my consulting gorup come help, and we said we would split it 3 ways. 
 
 Now we were making good progress, but jayden wanted to do a full CICD pipeline. By the time me and micheal had finished the project (around 6-8 hours in) jayden was still working on his CICD pipeline. He knew it was going to take longer and he wanted to ask for more money.
 
@@ -31,7 +31,8 @@ I took a pay cut, but the client ended up being very happy with the work, and sa
 
 
 1. we need a full cicd template for fast projects, which was have since made for AWS and Google Cloud.
-2. When discussing requirements for a project, It's not good enough to know what the funcionality is, it's important to consider **non-functional requirements**. Because these non-functional requirements can affect cost. Do they want this deployed as microservices in the cloud, or do they want a quick local demo? Do we need low latency? High availability? Does it need to be extremely fast with batch processing and workers taking from an SQS queue, or can it be processed on one local cpu? Money is a sensitive subject anc can strain relationships with both clients and employees. My team overperformed on our dime because we didn't want to produce low quality products, even for a demo, but in the future  (Reputation), it's going to become a more serious part of project discussions. 
+2. When discussing requirements for a project, It's not good enough to know what the funcionality is, it's important to consider **non-functional requirements**. Because these non-functional requirements can affect cost. Do they want this deployed as microservices in the cloud, or do they want a quick local demo? Do we need low latency? High availability? Does it need to be extremely fast with batch processing and workers taking from an SQS queue, or can it be processed on one local cpu?
+3. Money is a sensitive subject anc can strain relationships with both clients and employees. My team overperformed on our dime because we didn't want to produce low quality products, even for a demo, but in the future  (Reputation), it's going to become a more serious part of project discussions, especially when it comes to paying my fellow engineers. So we plan to stick with individual hours worked and having better projections for cost for clients. 
 
 ## What is an API?
 - an api is a system of rules that allows different software services to interact
