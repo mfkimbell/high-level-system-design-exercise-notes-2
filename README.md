@@ -17,7 +17,8 @@ I have a consulting group with my friends Jayden and Michael, they're developers
 
 We had a client ask us to build an embeddable iframe that helps marketing people learn to use ai to help apply business decomposition documents
 
-They said it would take around 4 hours and they would pay $600. I guessed it would take 3 times longer, which was fine, and I had the other two developers from my consulting gorup come help, and we said we would split it 3 ways. 
+They said they would pay 800 dollars. I asked my other two developers from my consulting gorup to help and we all agreed to split the money 3 ways.
+
 
 Now we were making good progress, but jayden wanted to do a full CICD pipeline. By the time me and micheal had finished the project (around 6-8 hours in) jayden was still working on his CICD pipeline. He knew it was going to take longer and he wanted to ask for more money.
 
